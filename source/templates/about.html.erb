@@ -1,0 +1,25 @@
+---
+title: About
+---
+<div class="main">
+    <aside class='about-aside'>
+        <%= image_tag lorem.image(600x300), :alt=>'Photo', :class=>'about-image' %>
+    </aside>
+    <article class="about-article">
+        <section>
+            <h2>About</h2>
+            <dl>
+                <dt>Email</dt>
+                <dd><%= mail_to 'info@example.com' %></dd>
+                <dt>Twitter</dt>
+                <dd><%= link_to '@you', 'https://twitter.com/you' %>
+                <dt>Phone</dt>
+                <dd>867-5309</dd>
+                <dt>Address</dt>
+                <dd>1234 Dodge St.</dd>
+                <dd>Somewhere, USA 12345</dd>
+            </dl>
+            <p>I am me. I have lots of text here to show you how cool I am. People will read this and love you.</p>
+        </section>
+    </article>
+</div>

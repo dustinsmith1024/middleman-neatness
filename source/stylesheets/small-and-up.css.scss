@@ -1,0 +1,23 @@
+/* small and up */
+.main {
+    @include outer-container;
+}
+
+nav {
+    @include outer-container;
+    li {
+        @include span-columns(3);
+    }
+    a {
+        padding: 0;
+    }
+}
+
+nav a, .gallery-link {
+    font-size: 0.9em;
+}
+
+.home-link-container {
+    margin-bottom: 0;
+    text-align: left;
+}

@@ -1,0 +1,11 @@
+/* IE only 
+
+this loads all the css without the media queries
+
+*/
+
+@import 'normalize';
+@import 'basic';
+@import 'small-and-up';
+/* Dont need medium in this one */
+@import 'large-and-up';

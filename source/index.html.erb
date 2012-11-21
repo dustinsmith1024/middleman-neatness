@@ -1,0 +1,37 @@
+---
+title: Home
+---
+<p>Make sure to run 'bourbonn install' and 'neat' install in your stylesheets directory.</p>
+<div class="main">
+  <div class="home-link-container">
+        <% link_to '/templates/about.html', :class=>'home-image-link' do %>
+          <%= image_tag lorem.image('300x200', :text=>'About') %>
+          <div class="hover-logo"></div>
+        <% end %>
+        <%= link_to 'About Template', '/templates/about.html', :class=>'home-link' %>
+    </div>
+    <div class="home-link-container">
+        <% link_to '/templates/no-image.html', :class=>'home-image-link' do %>
+          <%= image_tag lorem.image('300x200', :text => 'No Image') %>
+          <div class="hover-logo"></div>
+        <% end %>
+        <%= link_to 'No image template', '/templates/no-image.html', :class=>'home-link' %>
+    </div>
+    <div class="home-link-container">
+        <% link_to '/templates/image-page.html', :class=>'home-image-link' do %>
+          <%= image_tag lorem.image('300x200', :about=> 'Image Page') %>
+          <div class="hover-logo"></div>
+        <% end %>
+        <%= link_to 'Image page', '/templates/image-page.html', :class=>'home-link' %>
+    </div>
+  <% 3.times do |num| %>
+    <div class="home-link-container">
+        <% link_to 'link.html', :class=>'home-image-link' do %>
+          <%= image_tag lorem.image('300x200') %>
+          <div class="hover-logo"></div>
+        <% end %>
+        <%= link_to 'linksee ' + num.to_s, 'link.html', :class=>'home-link' %>
+    </div>
+  <% end %>
+
+</div>

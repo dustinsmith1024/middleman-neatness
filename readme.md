@@ -1,6 +1,6 @@
 
 
-# Middleman Project Template: with Frameless adaptive grid
+# Middleman Project Template: with Bourbon and Neat
 ------
 
 ##Basics

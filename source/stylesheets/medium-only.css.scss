@@ -1,0 +1,18 @@
+/* medium only */
+.main {
+    padding: 0 0.625em; /* 10px / 16px font size */
+}
+
+.index .main, .about .main, .resources .main {
+    padding-top: 0.625em; /* 10px / 16px font size */
+}
+
+.home-link-container {
+    /* 2 columns onmedium size windows */
+    @include span-columns(6);
+    @include nth-omega(2n);
+}
+
+.image-gallery-aside {
+    margin: 1em auto; /* 10px / 16px font size */
+}

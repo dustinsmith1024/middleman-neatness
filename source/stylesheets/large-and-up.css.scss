@@ -1,0 +1,60 @@
+/* large and up */
+body {
+	max-width: 960px;
+	padding: 0 10px;
+}
+
+.main aside img {
+    max-width: 100%;
+}
+
+.main {
+    @include outer-container;
+    .home-link-container {
+        @include span-columns(4);
+        @include nth-omega(3n);
+        padding-bottom: 10px;
+        .home-image-link {
+            img {
+            	width: auto;
+            }
+        }
+    }
+}
+
+.image-gallery-aside {
+      @include span-columns(2);
+}
+
+.picture-container {
+	text-align: left;
+	overflow-x: hidden; //straight crops off the right side of the image if its too big
+}
+
+.image-gallery-section {
+      @include span-columns(10);
+      img {
+      	max-height: 600px;
+      	overflow-x: hidden;
+      }
+}
+
+.image-gallery-aside-large {
+      @include span-columns(7);
+      float: right;
+}
+
+.image-gallery-section-small {
+      @include span-columns(5);
+      img {
+      	height: 550px;
+  	}
+}
+
+.about-aside {
+      @include span-columns(6);
+}
+
+.about-article {
+      @include span-columns(6);
+}

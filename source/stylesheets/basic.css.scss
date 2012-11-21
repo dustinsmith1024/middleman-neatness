@@ -1,0 +1,207 @@
+/* basic styles, some imported from HTML5 boilerplate. 
+
+These style are needed for all layouts, mobile, tablet, desktop, etc.
+
+*/
+@import "bourbon/bourbon";
+/*$visual-grid: true;
+$visual-grid-index: front;*/
+@import "neat/neat";
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+body {
+    background-color: #FBFBFB;
+    color: #333;
+    font: 1em Century Gothic, sans-serif;
+    line-height: 1.4;
+    margin: 0 auto;
+    padding: 0.625em;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+.chromeframe {
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+    margin: 0.2em 0;
+}
+
+p, dt, dd {
+    font-size: 0.7em;
+}
+
+h2 {
+	text-transform: uppercase;
+	font-weight: normal;
+	font-size: 1em;
+}
+/* ==============
+    MOBILE: Menu
+   ============== */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 0 0 10px 0;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+a {
+    color: #777;
+}
+
+nav a.active,
+nav a:hover,
+a:hover {
+    color: #333;
+}
+
+nav a:hover,
+a:hover,
+a {
+    text-decoration: none;
+}
+
+/* ==============
+    MOBILE: Main
+   ============== */
+footer {
+    @include outer-container;
+    margin: 0px auto;
+    text-align: center;
+}
+
+article h2 {
+    margin-top: 0;
+}
+
+.main, footer {
+    border-top: 1px solid #eee;
+}
+
+.brand {
+    text-align: center;
+}
+
+.title {
+    color: #333;
+}
+
+.logo {
+    width: 150px;
+}
+
+.main {
+    padding: 15px 0;
+}
+
+.footer-logo {
+    width: 120px;
+    margin-top: 15px;
+}
+
+.ie7 .title { /* Not sure if this is needed */
+    padding-top: 20px;
+}
+
+.galleries-link-container {
+    text-align: center;
+    padding-bottom: 10px;
+}
+.gallery-image-link {
+    display: block;
+}
+
+.gallery-link {
+    padding-top: 10px;
+    display: inline-block;
+}
+
+.picture-container {
+    text-align: center;
+}
+
+.top {
+	margin-top: 0;
+}
+
+.pictures-list {
+    margin: 5px 0;
+    padding: 0;
+    font-size: 0.7em;
+    li {
+	    display: inline;
+	    list-style-type: none;
+	    padding: 0 10px;
+    }
+}
+
+.image-gallery-image-link {
+    position: relative;
+}
+
+.image-gallery-link-logo {
+    background: #000 url('/images/logo-dark.svg') no-repeat center center;
+    background-color: #333;
+    background-size: 60%;
+    
+    position: absolute;
+    top: 0;
+    
+    height: 100%;
+    width: 100%;
+
+    opacity: 0;
+	filter: alpha(opacity= 0 * 100 );
+    zoom: 1; /* needed for opacity in IE */
+    @include transition (opacity .3s ease);
+}
+
+.no-svg {
+    .image-gallery-link-logo {
+        background: #000 url('/images/logo-dark.png') no-repeat center center;
+    }
+}
+
+.image-gallery-image-link:hover {
+    background-color: #fff;
+    .gallery-link-logo, .logo-hover {
+        display: block;
+        opacity: 0.75;
+        filter: alpha(opacity= 0.75 * 100 );
+        @include transition (opacity .3s ease);
+    }
+}
+
+.about-aside,
+.contact-aside,
+.image-gallery-aside {
+    margin: 0 auto;
+}

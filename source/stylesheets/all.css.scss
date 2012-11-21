@@ -1,0 +1,20 @@
+/* Always import the basic styles */
+@import 'normalize';
+@import 'basic';
+
+@media only screen and (min-width: 347px) {
+    /* Styles shared for all looks about 347px */
+    @import 'small-and-up';
+}
+
+@media only screen and (min-width: 347px) and (max-width: 635px) {
+    /* Only used in between 347 and 645 px.
+       Puts the homepage in a 2x2 grid and make the other pages more up and down */
+    @import 'medium-only';
+}
+
+@media only screen and (min-width: 635px) {
+    /* Only used when screen is larger than 635px.
+       Puts the homepage in a 3x2 grid and moved content to the sides of images in galleries */
+    @import 'large-and-up';
+}
